@@ -28,15 +28,18 @@ export VISUAL='nvim'
 
 source $ZSH/oh-my-zsh.sh
 
+# Plugins
+plugins=(git vi-mode)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Enable command auto-correction.
 ENABLE_CORRECTION="true"
-#
+
 # Command execution time stamp shown in the history command output
 HIST_STAMPS="dd.mm.yyyy"
 
-# Plugins
-plugins=(git)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Controls whether the cursor style is changed when switching vi modes
+VI_MODE_SET_CURSOR=true
 
 ######################################################################################
 # ALIASES
@@ -69,8 +72,8 @@ alias nv="$EDITOR $HOME/.config/nvim/init.vim"
 alias na="$EDITOR $HOME/.config/alacritty/alacritty.yml"
 
 # Shutdown or reboot
-alias ssn="sudo shutdown now"
-alias sr="sudo reboot"
+alias sd="shutdown now"
+alias rb="reboot"
 
 # Dotfiles bare git repo
 alias dot="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
