@@ -79,7 +79,7 @@ alias sd="shutdown now"
 alias rb="reboot"
 
 # Dotfiles bare git repo
-alias dot="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/dotfiles-git/ --work-tree=$HOME"
 
 # Colorize the grep command output for ease of use (good for log files)
 alias grep='grep --color=auto'
