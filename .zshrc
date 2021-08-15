@@ -45,13 +45,16 @@ VI_MODE_SET_CURSOR=true
 # ALIASES
 ######################################################################################
 
+# My notes
+alias td='$EDITOR $HOME/Documents/TODO.txt'
+
 # Protects against stupid mistakes :)
 alias rm='rm -I'
 
 # List
 alias ls='ls --color=auto'
 alias la='ls -a'
-alias ll='ls -la'
+alias ll='ls -lah'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
