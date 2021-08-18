@@ -22,6 +22,9 @@ export ZSH=/usr/share/oh-my-zsh/
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+# Default terminal
+export TERM='alacritty'
+
 ######################################################################################
 # OH MY ZSH
 ######################################################################################
@@ -44,6 +47,9 @@ VI_MODE_SET_CURSOR=true
 ######################################################################################
 # ALIASES
 ######################################################################################
+
+# My backups
+alias gd='$HOME/Scripts/backup-googledrive.sh'
 
 # My notes
 alias td='$EDITOR $HOME/Documents/TODO.txt'
