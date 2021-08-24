@@ -22,9 +22,6 @@ export ZSH=/usr/share/oh-my-zsh/
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# Default terminal
-export TERM='alacritty'
-
 ######################################################################################
 # OH MY ZSH
 ######################################################################################
@@ -68,7 +65,8 @@ alias l.="ls -A | egrep '^\.'"
 alias yas='yay -S'
 alias yasu='yay -Syu'
 alias yar='yay -Rsn'
-alias yaqi='yay -Qi'
+alias yaq='yay -Qi'
+alias yaqi='yay -Qi | grep'
 alias yac='yay -Yc'
 
 # Programs
