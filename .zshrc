@@ -45,6 +45,9 @@ VI_MODE_SET_CURSOR=true
 # ALIASES
 ######################################################################################
 
+# Timer
+alias tm='$HOME/Scripts/timer.sh'
+
 # My backups
 alias gd='$HOME/Scripts/backup-googledrive.sh'
 
