@@ -69,7 +69,7 @@ alias yas='yay -S'
 alias yasu='yay -Syu'
 alias yar='yay -Rsn'
 alias yaq='yay -Qi'
-alias yaqi='yay -Qi | grep'
+alias yaqi='yay -Q --info'
 alias yac='yay -Yc'
 
 # Programs
@@ -77,9 +77,9 @@ alias v='nvim'
 alias weather='curl wttr.in'
 
 # Edit important configuration files
-alias nz="$EDITOR $HOME/.zshrc"
-alias nv="$EDITOR $HOME/.config/nvim/init.vim"
-alias na="$EDITOR $HOME/.config/alacritty/alacritty.yml"
+alias vz="$EDITOR $HOME/.zshrc"
+alias vv="$EDITOR $HOME/.config/nvim/init.vim"
+alias va="$EDITOR $HOME/.config/alacritty/alacritty.yml"
 
 # Shutdown or reboot
 alias sd="shutdown now"
