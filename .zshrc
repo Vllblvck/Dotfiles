@@ -45,6 +45,12 @@ VI_MODE_SET_CURSOR=true
 # ALIASES
 ######################################################################################
 
+# Mock text
+alias mock='python $HOME/Scripts/mock.py'
+
+# Check what GPU is being used
+alias gpu='inxi -SGx'
+
 # Timer
 alias tm='$HOME/Scripts/timer.sh'
 
@@ -59,10 +65,13 @@ alias rm='rm -I'
 
 # List
 alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -lah'
+alias la='ls -A'
+alias ll='ls -lA'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
+alias lg='ls | grep'
+alias llg='ls -lA | grep'
+alias lag='ls -A | grep'
 
 # Package management
 alias yas='yay -S'
