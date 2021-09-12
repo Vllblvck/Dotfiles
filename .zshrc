@@ -15,9 +15,6 @@ source "/usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme"
 # ENVIRONMENT
 ######################################################################################
 
-# Path to oh-my-zsh installation.
-export ZSH=/usr/share/oh-my-zsh/
-
 # Preferred editor
 export EDITOR='nvim'
 export VISUAL='nvim'
@@ -26,11 +23,11 @@ export VISUAL='nvim'
 # OH MY ZSH
 ######################################################################################
 
-source $ZSH/oh-my-zsh.sh
+# Path to oh-my-zsh installation.
+export ZSH=/usr/share/oh-my-zsh/
 
 # Plugins
-plugins=(git vi-mode)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(git vi-mode zsh-autosuggestions)
 
 # Enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -40,6 +37,8 @@ HIST_STAMPS="dd.mm.yyyy"
 
 # Controls whether the cursor style is changed when switching vi modes
 VI_MODE_SET_CURSOR=true
+
+source $ZSH/oh-my-zsh.sh
 
 ######################################################################################
 # ALIASES
@@ -57,8 +56,11 @@ alias tm='$HOME/Scripts/timer.sh'
 # My backups
 alias gd='$HOME/Scripts/backup-googledrive.sh'
 
-# My notes
+# My TODOs
 alias td='$EDITOR $HOME/Documents/TODO.txt'
+
+# My notes
+alias nt='$EDITOR $HOME/Documents/NOTES.txt'
 
 # Protects against stupid mistakes :)
 alias rm='rm -I'
@@ -146,8 +148,10 @@ ex ()
 }
 
 ######################################################################################
-# POWERLEVEL10K
+# THINGS THAT NEED TO BE AS LOW AS POSSIBLE BECAUSE YES
 ######################################################################################
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
