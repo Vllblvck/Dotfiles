@@ -184,8 +184,44 @@ schemes:
       magenta: '#FFEE99'
       cyan: '#95E6CB'
       white: '#FFFFFF'
+  
+    edna: &edna
+      primary:
+        background: '#263238'
+        foreground: '#ffffff'
 
-colors: *macOS
+      normal:
+         black: '#455c67'
+         red: '#d54f8b'
+         green: '#1addb3'
+         yellow: '#efd25c'
+         blue: '#10b1e1'
+         magenta: '#cb75f7'
+         cyan: '#00c6dc'
+         white: '#6f91a0'
+
+      bright:
+        black: '#425762'
+        red: '#c74a82'
+        green: '#1de9bf'
+        yellow: '#f7d95f'
+        blue: '#10a6d4'
+        magenta: '#b468dc'
+        cyan: '#00bcd4'
+        white: '#6b8b9a'
+
+      dim:
+        black: '#475e6a'
+        red: '#e15493'
+        green: '#1ef9ca'
+        yellow: '#ffe062'
+        blue: '#0f9eca'
+        magent: '#af65d6'
+        cyan: '#00b6ca'
+        white: '#7294a4'
+
+
+colors: *edna
 
 # Visual Bell
 #
