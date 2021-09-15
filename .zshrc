@@ -29,9 +29,6 @@ export ZSH=/usr/share/oh-my-zsh/
 # Plugins
 plugins=(git vi-mode zsh-autosuggestions)
 
-# Enable command auto-correction.
-ENABLE_CORRECTION="true"
-
 # Command execution time stamp shown in the history command output
 HIST_STAMPS="dd.mm.yyyy"
 
@@ -55,12 +52,6 @@ alias tm='$HOME/Scripts/timer.sh'
 
 # My backups
 alias gd='$HOME/Scripts/backup-googledrive.sh'
-
-# My TODOs
-alias td='$EDITOR $HOME/Documents/TODO.txt'
-
-# My notes
-alias nt='$EDITOR $HOME/Documents/NOTES.txt'
 
 # Protects against stupid mistakes :)
 alias rm='rm -I'
