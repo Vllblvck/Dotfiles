@@ -57,7 +57,7 @@ set relativenumber
 set expandtab
 set autoindent
 
-autocmd FileType python,java setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
+autocmd FileType make,python,java setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 autocmd FileType markdown,html,htmldjango,css,javascript,vue,c,sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Colorscheme
