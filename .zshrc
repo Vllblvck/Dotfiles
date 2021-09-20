@@ -51,7 +51,8 @@ alias gpu='inxi -SGx'
 alias tm='$HOME/Scripts/timer.sh'
 
 # My backups
-alias gd='$HOME/Scripts/backup-googledrive.sh'
+alias gd='$HOME/Scripts/backup-drive-dyskietka.sh'
+alias gdr='$HOME/Scripts/backup-drive-rclone.sh'
 
 # Protects against stupid mistakes :)
 alias rm='rm -I'
