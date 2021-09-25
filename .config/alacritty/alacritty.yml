@@ -221,7 +221,7 @@ schemes:
         white: '#7294a4'
 
 
-colors: *edna
+colors: *nordic
 
 # Visual Bell
 #

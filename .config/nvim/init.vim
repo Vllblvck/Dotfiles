@@ -61,7 +61,8 @@ autocmd FileType make,python,java setlocal tabstop=4 softtabstop=4 shiftwidth=4 
 autocmd FileType markdown,html,htmldjango,css,javascript,vue,c,sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Colorscheme
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme nord
 "autocmd FileType python,haskell,html,htmldjango,css,javascript,vue,c,cs,java colorscheme gruvbox
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
