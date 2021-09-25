@@ -53,6 +53,7 @@ alias tm='$HOME/Scripts/timer.sh'
 # My backups
 alias gd='$HOME/Scripts/backup-drive-dyskietka.sh'
 alias gdr='$HOME/Scripts/backup-drive-rclone.sh'
+alias bp='$HOME/Scripts/backup-plasma.sh'
 
 # Protects against stupid mistakes :)
 alias rm='rm -I'
