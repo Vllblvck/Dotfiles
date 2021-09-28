@@ -19,6 +19,9 @@ source "/usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+# For fuzzy finder to show hidden files
+export FZF_DEFAULT_COMMAND='find .'
+
 ######################################################################################
 # OH MY ZSH
 ######################################################################################
@@ -75,6 +78,7 @@ alias yar='yay -Rsn'
 alias yaq='yay -Qi'
 alias yaqi='yay -Q --info'
 alias yac='yay -Yc'
+alias yaf='yay -F'
 
 # Programs
 alias v='nvim'
@@ -97,19 +101,6 @@ alias grep='grep --color=auto'
 
 # Readable output for df
 alias df='df -h'
-
-# Free
-alias free="free -mt"
-
-# Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
-
-# Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-
-# Search content with ripgrep
-alias rg="rg --sort path"
 
 # Get the error messages from journalctl
 alias jctle="journalctl -p 3 -xb"
