@@ -11,11 +11,12 @@ Plug 'scrooloose/nerdcommenter' "Auto comment
 Plug 'scrooloose/nerdtree' "File tree
 Plug 'vim-airline/vim-airline' "Status bar
 Plug 'ap/vim-css-color' "Colors highlight
-Plug 'cloudhead/neovim-fuzzy' "Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 "Color schemes
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+Plug 'navarasu/onedark.nvim'
 
 "LaTeX plugins
 Plug 'lervag/vimtex', { 'for': 'tex' }
@@ -38,7 +39,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "Fuzzy finder
-nnoremap <C-p> :FuzzyOpen<CR>
+nnoremap <C-p> :FZF<CR>
 
 "Nerd tree
 nnoremap <C-T> :NERDTreeToggle<CR>
@@ -62,8 +63,8 @@ autocmd FileType markdown,html,htmldjango,css,javascript,vue,c,sh,yaml setlocal 
 
 " Colorscheme
 "colorscheme gruvbox
-colorscheme nord
-"autocmd FileType python,haskell,html,htmldjango,css,javascript,vue,c,cs,java colorscheme gruvbox
+colorscheme onedark
+"colorscheme nord
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COC SETTINGS
