@@ -53,8 +53,16 @@ alias gpu='inxi -SGx'
 # Timer
 alias tm='$HOME/Scripts/timer.sh'
 
+# Git
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gs='git status'
+alias gd='git diff'
+alias gr='git reset'
+alias gl='git log'
+
 # My backups
-alias gd='$HOME/Scripts/backup-drive-dyskietka.sh'
 alias gdr='$HOME/Scripts/backup-drive-rclone.sh'
 alias bp='$HOME/Scripts/backup-plasma.sh'
 
