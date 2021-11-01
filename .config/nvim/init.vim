@@ -4,14 +4,13 @@
 
 call plug#begin('~/.local/share/nvim/site/autoload/')
 
-"Misc
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Auto completion and stuff
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'scrooloose/nerdcommenter' "Auto comment
 Plug 'scrooloose/nerdtree' "File tree
 Plug 'vim-airline/vim-airline' "Status bar
 Plug 'ap/vim-css-color' "Colors highlight
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "Fuzzy search
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'} "Markdown preview in browser
 
 "Color schemes
 Plug 'morhetz/gruvbox'
@@ -48,6 +47,9 @@ nnoremap <C-T> :NERDTreeToggle<CR>
 " GENERAL
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"Do not wrap text
+set nowrap
+
 "Always yank to clipboard
 set clipboard+=unnamedplus
 
@@ -61,7 +63,7 @@ set autoindent
 autocmd FileType make,python,java setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 autocmd FileType markdown,html,htmldjango,css,javascript,vue,c,sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-" Colorscheme
+"Colorscheme
 "colorscheme gruvbox
 colorscheme onedark
 "colorscheme nord
