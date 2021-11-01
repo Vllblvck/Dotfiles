@@ -1,7 +1,7 @@
 #/bin/bash
 
 REMOTE="google_drive"
-SOURCES=("$HOME/Documents/DigitalGarden/" "$HOME/Documents/Passwords.kdbx")
+SOURCES=("$HOME/Documents/DigitalGarden/" "$HOME/next-cloud/Passwords.kdbx")
 DESTINATIONS=("DigitalGarden/" "Documents/")
 
 if [[ "${#SOURCES[@]}" -ne "${#DESTINATIONS[@]}" ]]
