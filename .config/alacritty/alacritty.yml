@@ -462,9 +462,9 @@ key_bindings:
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: K,        mods: Control|Shift, action: ScrollPageUp     }
-  - { key: K,        mods: Control,       action: ScrollLineUp     }
+  - { key: K,        mods: Shift,         action: ScrollLineUp     }
   - { key: J,        mods: Control|Shift, action: ScrollPageDown   }
-  - { key: J,        mods: Control,       action: ScrollLineDown   }
+  - { key: J,        mods: Shift,         action: ScrollLineDown   }
   - { key: B,        mods: Control|Shift, action: ScrollToBottom   }
 
 
