@@ -44,6 +44,12 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 ######################################################################################
 
+# Tmux
+alias tx='tmux'
+
+# Ranger
+alias r='ranger'
+
 # Mock text
 alias mock='python $HOME/Scripts/mock.py'
 
@@ -96,6 +102,8 @@ alias weather='curl wttr.in'
 alias vz="$EDITOR $HOME/.zshrc"
 alias vv="$EDITOR $HOME/.config/nvim/init.vim"
 alias va="$EDITOR $HOME/.config/alacritty/alacritty.yml"
+alias vx="$EDITOR $HOME/.xmonad/xmonad.hs"
+alias vxb="$EDITOR $HOME/.config/xmobar/xmobarrc"
 
 # Shutdown or reboot
 alias sd="shutdown now"
@@ -140,7 +148,7 @@ ex ()
 }
 
 ######################################################################################
-# THINGS THAT NEED TO BE AS LOW AS POSSIBLE BECAUSE YES
+# THINGS THAT NEED TO BE AS LOW AS POSSIBLE
 ######################################################################################
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
