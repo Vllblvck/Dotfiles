@@ -455,17 +455,17 @@ mouse:
 # at once.
 
 key_bindings:
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  - { key: K,        mods: Control|Shift, action: ScrollPageUp     }
-  - { key: K,        mods: Shift,         action: ScrollLineUp     }
-  - { key: J,        mods: Control|Shift, action: ScrollPageDown   }
-  - { key: J,        mods: Shift,         action: ScrollLineDown   }
-  - { key: B,        mods: Control|Shift, action: ScrollToBottom   }
+  - { key: V,        mods: Control|Shift,         action: Paste            }
+  - { key: C,        mods: Control|Shift,         action: Copy             }
+  - { key: Insert,   mods: Shift,                 action: PasteSelection   }
+  - { key: Key0,     mods: Control,               action: ResetFontSize    }
+  - { key: Equals,   mods: Control,               action: IncreaseFontSize }
+  - { key: Minus,    mods: Control,               action: DecreaseFontSize }
+  - { key: K,        mods: Control|Alt|Shift,     action: ScrollPageUp     }
+  - { key: K,        mods: Control|Shift,         action: ScrollLineUp     }
+  - { key: J,        mods: Control|Alt|Shift,     action: ScrollPageDown   }
+  - { key: J,        mods: Control|Shift,         action: ScrollLineDown   }
+  - { key: B,        mods: Control|Shift,         action: ScrollToBottom   }
 
 
 #debug:
