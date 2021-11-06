@@ -1,0 +1,1 @@
+KERNEL=="card1", SUBSYSTEM=="drm", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/vllblvck/.Xauthority", RUN+="/usr/bin/setup-ext-display.sh"
