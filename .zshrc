@@ -104,6 +104,7 @@ alias vv="$EDITOR $HOME/.config/nvim/init.vim"
 alias va="$EDITOR $HOME/.config/alacritty/alacritty.yml"
 alias vx="$EDITOR $HOME/.xmonad/xmonad.hs"
 alias vxb="$EDITOR $HOME/.config/xmobar/xmobarrc"
+alias vtx="$EDITOR $HOME/.config/tmux/tmux.conf"
 
 # Shutdown or reboot
 alias sd="shutdown now"
