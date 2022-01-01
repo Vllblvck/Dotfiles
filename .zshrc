@@ -44,6 +44,24 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES
 ######################################################################################
 
+# Fix touchpad (experimental could also use as a KDE keyshortcut)
+# alias ft='modprobe -r i2c_hid_acpi && modprobe i2c_hid_acpi'
+
+# List timeshift snapshots
+alias tl='sudo timeshift --list'
+
+# Create timeshift snapshot
+alias tc='sudo timeshift --create --comments MANUAL_$(date +"%d-%m-%Y_%T")'
+
+# Remove timeshift snapshot
+alias tr='sudo timeshift --delete --snapshot'
+
+# TODO Finish
+# Remove manual timeshift snapshots
+#snap_name='$(sudo timeshift --list | grep MANUAL)'
+#echo ${snap_name}
+#alias tr='sudo timeshift --delete --snapshot ${snap_name}'
+
 # Tmux
 alias tx='tmux'
 
@@ -78,11 +96,11 @@ alias rm='rm -I'
 # List
 alias ls='ls --color=auto'
 alias la='ls -A'
-alias ll='ls -lA'
+alias ll='ls -lAh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 alias lg='ls | grep'
-alias llg='ls -lA | grep'
+alias llg='ls -lAh | grep'
 alias lag='ls -A | grep'
 
 # Package management
