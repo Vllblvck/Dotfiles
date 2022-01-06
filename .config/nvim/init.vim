@@ -10,7 +10,7 @@ Plug 'scrooloose/nerdtree' "File tree
 Plug 'vim-airline/vim-airline' "Status bar
 Plug 'ap/vim-css-color' "Colors highlight
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "Fuzzy search
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'} "Markdown preview in browser
+"Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'} "Markdown preview in browser
 
 "Color schemes
 Plug 'morhetz/gruvbox'
@@ -43,7 +43,7 @@ set relativenumber
 set expandtab
 set autoindent
 
-autocmd FileType make,python,java,javascript setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
+autocmd FileType make,python,java,javascript,typescript setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80
 autocmd FileType json,markdown,html,htmldjango,css,vue,c,sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 "Colorscheme
@@ -174,7 +174,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "  " Update signature help on jump placeholder.
 "  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 "augroup end
-
+"
 "
 "" Applying codeAction to the selected region.
 "" Example: `<leader>aap` for current paragraph
@@ -211,7 +211,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "" Add `:OR` command for organize imports of the current buffer.
 "command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 "
-
+"
 "" Mappings for CoCList
 "" Show all diagnostics.
 "nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
