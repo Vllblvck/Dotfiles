@@ -22,6 +22,9 @@ export VISUAL='nvim'
 # For fuzzy finder to show hidden files
 export FZF_DEFAULT_COMMAND='find .'
 
+# Add programs to PATH
+export PATH="$PATH:$HOME/.local/bin"
+
 ######################################################################################
 # OH MY ZSH
 ######################################################################################
@@ -139,6 +142,9 @@ alias df='df -h'
 
 # Get the error messages from journalctl
 alias jctle="journalctl -p 3 -xb"
+
+# Take a snapshot out of web cam
+alias camshot='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 
 # Extractor for all kinds of archives
 ex ()
