@@ -23,7 +23,7 @@ export VISUAL='nvim'
 export FZF_DEFAULT_COMMAND='find .'
 
 # Add programs to PATH
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.emacs.d/bin"
 
 ######################################################################################
 # OH MY ZSH
