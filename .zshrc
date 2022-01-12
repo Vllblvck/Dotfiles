@@ -33,7 +33,9 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.emacs.d/bin"
 export ZSH=/usr/share/oh-my-zsh/
 
 # Plugins
-plugins=(git vi-mode zsh-autosuggestions)
+plugins=(git vi-mode)
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Command execution time stamp shown in the history command output
 HIST_STAMPS="dd.mm.yyyy"
@@ -132,7 +134,7 @@ alias sd="shutdown now"
 alias rb="reboot"
 
 # Dotfiles bare git repo
-alias dot="/usr/bin/git --git-dir=$HOME/dotfiles-git/ --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 # Colorize the grep command output for ease of use (good for log files)
 alias grep='grep --color=auto'
