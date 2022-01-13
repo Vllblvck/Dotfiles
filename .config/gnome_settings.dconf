@@ -1,5 +1,36 @@
+[org/cinnamon/desktop/applications/terminal]
+exec='alacritty'
+
+[org/gnome/Contacts]
+did-initial-setup=true
+window-fullscreen=false
+window-height=600
+window-maximized=false
+window-width=800
+
+[org/gnome/GWeather]
+temperature-unit='centigrade'
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Jelenia, Bolesławiec County, Lower Silesian Voivodeship, Poland', '', false, [(0.89711422790336004, 0.26786990299164426)], [(0.90644758551790983, 0.27063400012664945)])>)>]
+
+[org/gnome/baobab/ui]
+active-chart='rings'
+window-size=(960, 600)
+window-state=87168
+
+[org/gnome/books]
+window-maximized=false
+window-position=[576, 229]
+window-size=[768, 600]
+
+[org/gnome/clocks/state/window]
+panel-id='world'
+size=(870, 690)
+state=87042
+
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='default-apps'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -15,13 +46,21 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/Blobs.svg'
+primary-color='#ffffff'
+secondary-color='#000000'
+
 [org/gnome/desktop/input-sources]
 per-window=false
 sources=[('xkb', 'pl')]
-xkb-options=@as []
+xkb-options=['caps:swapescape']
 
 [org/gnome/desktop/interface]
-clock-show-seconds=true
+clock-format='24h'
+clock-show-seconds=false
 clock-show-weekday=true
 font-antialiasing='grayscale'
 font-hinting='slight'
@@ -29,7 +68,8 @@ gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita-dark'
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'gnome-network-panel', 'nemo']
+application-children=['firefox', 'gnome-network-panel', 'nemo', 'steam-native', 'org-keepassxc-keepassxc']
+show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -40,7 +80,37 @@ application-id='gnome-network-panel.desktop'
 [org/gnome/desktop/notifications/application/nemo]
 application-id='nemo.desktop'
 
+[org/gnome/desktop/notifications/application/org-keepassxc-keepassxc]
+application-id='org.keepassxc.KeePassXC.desktop'
+
+[org/gnome/desktop/notifications/application/steam-native]
+application-id='steam-native.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=0.088235294117646967
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 14
+recent-files-max-age=7
+remove-old-temp-files=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/Blobs.svg'
+primary-color='#ffffff'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 600
+
 [org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
 event-sounds=true
 theme-name='__custom'
 
@@ -76,6 +146,9 @@ window-size=(1024, 768)
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/evolution]
+default-address-book='system-address-book'
+
 [org/gnome/gedit/plugins]
 active-plugins=['sort', 'spell', 'filebrowser', 'docinfo', 'modelines']
 
@@ -110,8 +183,13 @@ search-filter-time-type='last_modified'
 initial-size=(890, 550)
 maximized=false
 
+[org/gnome/photos]
+window-maximized=false
+window-position=[2235, 242]
+window-size=[742, 548]
+
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
 logout=['<Super>x']
 screensaver=['<Primary><Alt>l']
 search=['<Super>d']
@@ -131,15 +209,48 @@ binding='<Super>e'
 command='nemo'
 name='File manager'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Shift><Super>s'
+command='flameshot gui'
+name='Flameshot'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=900
+
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'nemo.desktop', 'Alacritty.desktop', 'gnome-control-center.desktop', 'org.keepassxc.KeePassXC.desktop']
+disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['blur-my-shell@aunetx', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'volume-mixer@evermiss.net', 'sound-output-device-chooser@kgshank.net', 'x11gestures@joseexposito.github.io', 'trayIconsReloaded@selfmade.pl']
+favorite-apps=['firefox.desktop', 'nemo.desktop', 'Alacritty.desktop', 'obsidian.desktop', 'caprine.desktop', 'youtube-music.desktop', 'steam-native.desktop', 'org.keepassxc.KeePassXC.desktop', 'gnome-control-center.desktop']
+had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='41.3'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/extensions/blur-my-shell]
+appfolder-dialog-opacity=0.12
+brightness=0.29999999999999999
+dash-opacity=0.12
+debug=false
+hidetopbar=false
+sigma=30
+
+[org/gnome/shell/extensions/trayIconsReloaded]
+applications='[{"id":"com.nextcloud.desktopclient.nextcloud.desktop","hidden":true},{"id":"org.flameshot.Flameshot.desktop","hidden":true}]'
+icon-margin-horizontal=2
+icon-padding-horizontal=0
+tray-margin-left=4
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=@as []
 switch-to-application-2=@as []
 switch-to-application-3=@as []
 switch-to-application-4=@as []
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Jelenia, Bolesławiec County, Lower Silesian Voivodeship, Poland', '', false, [(0.89711422790336004, 0.26786990299164426)], [(0.90644758551790983, 0.27063400012664945)])>)>]
 
 [org/gnome/shell/world-clocks]
 locations=@av []
@@ -148,12 +259,13 @@ locations=@av []
 document-type='photo'
 
 [org/gnome/software]
-check-timestamp=int64 1642017742
+check-timestamp=int64 1642085548
 
 [org/gnome/tweaks]
 show-extensions-notice=false
 
 [org/gtk/settings/file-chooser]
+clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
@@ -164,14 +276,22 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(358, 65)
+window-position=(411, 48)
 window-size=(1203, 902)
 
+[org/nemo/list-view]
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_created_with_time', 'date_accessed', 'date_created', 'detailed_type', 'group', 'where', 'mime_type', 'date_modified_with_time', 'octal_permissions', 'owner', 'permissions']
+default-visible-columns=['name', 'size', 'type', 'date_modified']
+
 [org/nemo/preferences]
+close-device-view-on-device-eject=true
+default-folder-viewer='list-view'
+ignore-view-metadata=true
+inherit-folder-viewer=true
 show-hidden-files=true
 
 [org/nemo/window-state]
-geometry='800x550+560+262'
+geometry='1280x709+2212+169'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
