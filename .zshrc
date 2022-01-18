@@ -79,6 +79,9 @@ alias mock='python $HOME/Scripts/mock.py'
 # Check what GPU is being used
 alias gpu='inxi -SGx'
 
+# Chec what is run using nvidia graphics card
+alias nvidia-check='watch -n 1 nvidia-smi'
+
 # Timer
 alias tm='$HOME/Scripts/timer.sh'
 
