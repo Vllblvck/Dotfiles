@@ -112,7 +112,7 @@ alias llg='ls -lAh | grep'
 alias lag='ls -A | grep'
 
 # Package management
-alias yas='yay -S'
+alias yas='yay -Sy'
 alias yasu='yay -Syu'
 alias yar='yay -Rsn'
 alias yaq='yay -Qi'
